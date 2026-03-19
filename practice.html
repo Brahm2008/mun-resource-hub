@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MUN Resource Hub | Practice Zone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">MUN Resource Hub</h1>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="learn.html">Learn</a>
+        <a href="committees.html">Committees</a>
+        <a href="resources.html">Resources</a>
+        <a href="practice.html"  class = "active">Practice</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="container">
+      <h2>Practice Zone</h2>
+      <p>
+        Build confidence through simple drills: opening speeches, motions, caucus participation, and quick-response practice.
+      </p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <h2>Opening Speech Practice</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Prompt 1</h3>
+          <p>
+            You are representing Japan in a committee discussing maritime security in the Indo-Pacific.
+            Draft a 45-second opening speech with one concern, one principle, and one solution.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Prompt 2</h3>
+          <p>
+            You are representing Brazil in a committee discussing climate finance and sustainable development.
+            Prepare a concise opening speech focused on equity and implementation.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Prompt 3</h3>
+          <p>
+            You are representing India in a committee discussing cross-border terrorism.
+            Deliver a firm but diplomatic opening statement with a clear call for international cooperation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section light-bg">
+    <div class="container">
+      <h2>Common Motions to Practise</h2>
+      <div class="two-column-grid">
+        <div class="list-box">
+          <h3>Frequent Motions</h3>
+          <ul>
+            <li>Motion to open the General Speakers’ List</li>
+            <li>Motion for a Moderated Caucus</li>
+            <li>Motion for an Unmoderated Caucus</li>
+            <li>Motion to introduce a draft resolution</li>
+            <li>Motion to move into voting procedure</li>
+          </ul>
+        </div>
+        <div class="list-box">
+          <h3>How to Practise Them</h3>
+          <ul>
+            <li>Say them aloud until they feel natural</li>
+            <li>Keep wording short and confident</li>
+            <li>Know when each motion makes strategic sense</li>
+            <li>Match your motion to the flow of committee</li>
+            <li>Practise both formal and natural delivery styles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <h2>What Would You Say Next?</h2>
+      <div class="info-box">
+        <p>
+          Scenario: Another delegate says your proposed solution is unrealistic because it requires more international funding than many countries can commit.
+          How would you respond in a short, diplomatic, committee-appropriate way?
+        </p>
+      </div>
+
+      <div class="tips-box">
+        <ul>
+          <li>Acknowledge the concern instead of reacting defensively.</li>
+          <li>Reframe your solution as phased or scalable.</li>
+          <li>Show flexibility while protecting your core point.</li>
+          <li>Keep the tone diplomatic, not personal.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section light-bg">
+    <div class="container">
+      <h2>Quick Debate Drills</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>30-Second Drill</h3>
+          <p>
+            Pick any global issue and explain your country’s stance in 30 seconds without reading from a script.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Rebuttal Drill</h3>
+          <p>
+            Listen to a strong opposing argument and prepare a respectful rebuttal in 2 clear points.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Bloc-Building Drill</h3>
+          <p>
+            Identify 3 likely allies and explain why they may support your draft or working paper.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Clause Drill</h3>
+          <p>
+            Write one preambulatory clause and one operative clause for the same agenda in under 3 minutes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <h2>Random Practice Prompt</h2>
+      <div class="practice-box">
+        <p id="practicePrompt">
+          Click the button below to generate a random MUN practice prompt.
+        </p>
+        <button class="btn practice-btn" onclick="generatePrompt()">Generate Prompt</button>
+      </div>
+    </div>
+  </section>
+   
+  <section class="content-section light-bg">
+    <div class="container">
+      <h2>MUN Self-Score Generator</h2>
+      <div class="score-box">
+        <p class="score-intro">
+          Rate yourself from 1 (needs work) to 5 (strong) in each area, then calculate your practice score.
+        </p>
+
+        <div class="score-grid">
+          <div class="score-item">
+            <label for="speechScore">Opening Speech</label>
+            <select id="speechScore">
+              <option value="1">1 - Needs Work</option>
+              <option value="2">2 - Basic</option>
+              <option value="3">3 - Decent</option>
+              <option value="4">4 - Strong</option>
+              <option value="5">5 - Excellent</option>
+            </select>
+          </div>
+
+          <div class="score-item">
+            <label for="confidenceScore">Confidence</label>
+            <select id="confidenceScore">
+              <option value="1">1 - Needs Work</option>
+              <option value="2">2 - Basic</option>
+              <option value="3">3 - Decent</option>
+              <option value="4">4 - Strong</option>
+              <option value="5">5 - Excellent</option>
+            </select>
+          </div>
+
+          <div class="score-item">
+            <label for="rebuttalScore">Rebuttal Skill</label>
+            <select id="rebuttalScore">
+              <option value="1">1 - Needs Work</option>
+              <option value="2">2 - Basic</option>
+              <option value="3">3 - Decent</option>
+              <option value="4">4 - Strong</option>
+              <option value="5">5 - Excellent</option>
+            </select>
+          </div>
+
+          <div class="score-item">
+            <label for="researchScore">Research Preparedness</label>
+            <select id="researchScore">
+              <option value="1">1 - Needs Work</option>
+              <option value="2">2 - Basic</option>
+              <option value="3">3 - Decent</option>
+              <option value="4">4 - Strong</option>
+              <option value="5">5 - Excellent</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="btn practice-btn" onclick="calculateScore()">Calculate Score</button>
+
+        <div class="score-result" id="scoreResult">
+          Your score will appear here after calculation.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 MUN Resource Hub | Built as a student learning project</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

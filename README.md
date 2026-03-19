@@ -35,4 +35,4 @@ This project was built as a beginner web development project to practice:
 
 ## Author
 
-Built by Brahmleen Sahni
+Built by Brahmleen Kaur Sahni
